@@ -29,5 +29,4 @@ This project is a simple, responsive eCommerce website frontend that includes **
 
 ---
 
-## 🗂️ Project Structure
 
