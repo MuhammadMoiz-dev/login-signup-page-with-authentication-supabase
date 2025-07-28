@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+  <div class="w-full max-w-md p-8 bg-gray-800 rounded-lg shadow-lg">
+    <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+
+    <input id="email" type="email" placeholder="Email" class="w-full p-3 mb-4 rounded bg-gray-700" />
+    <input id="password" type="password" placeholder="Password" class="w-full p-3 mb-6 rounded bg-gray-700" />
+
+    <button onclick="signIn()" class="w-full bg-blue-500 hover:bg-blue-600 p-3 rounded text-white font-semibold">Login</button>
+
+    <p id="message" class="mt-4 text-center text-yellow-400 text-sm"></p>
+    <p class="mt-4 text-center text-sm text-gray-400">Don't have an account?
+      <a href="signup.html" class="text-green-400 hover:underline">Sign up</a>
+    </p>
+  </div>
+
+  <script src="supabaseClient.js"></script>
+  <script>
+    async function signIn() {
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const { error, data } = await supabase.auth.signInWithPassword({ email, password });
+
+      const msg = document.getElementById('message');
+      if (error) {
+        msg.textContent = error.message;
+      } else {
+        msg.textContent = "Logged in successfully!";
+        window.location.href = 'index.html'; // redirect if needed
+      }
+    }
+  </script>
+</body>
+</html>

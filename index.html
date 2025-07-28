@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>eStore Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 px-6 py-4 flex items-center justify-between shadow-md">
+    <div class="text-2xl font-bold text-green-400">eStore</div>
+    <div class="flex space-x-4">
+      <a href="login.html" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">Login</a>
+      <a href="signup.html" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Sign Up</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-6">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Welcome to eStore</h1>
+    <p class="text-lg text-gray-300 mb-8">Your favorite products at your fingertips</p>
+    <a href="#products" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-md text-lg font-medium">
+      Shop Now
+    </a>
+  </section>
+
+ <section id="products" class="px-6 py-10 bg-gray-800">
+  <h2 class="text-3xl font-semibold mb-6 text-center text-white">Featured Products</h2>
+  <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <!-- Product Card -->
+    <div class="bg-gray-700 rounded-lg p-5 shadow hover:shadow-lg transition">
+      <div class="h-40 w-full mb-4 rounded overflow-hidden bg-gray-600">
+        <img src="https://iphoneislam.com/wp-content/uploads/2025/02/iphone-17-air-scaled.jpg" alt="iPhone 17 Air" class="w-full h-full object-cover">
+      </div>
+      <h3 class="text-xl font-semibold text-white">Iphone 17 AIR</h3>
+      <p class="text-gray-300 mt-2">$19.99</p>
+      <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Add to Cart</button>
+    </div>
+
+    <div class="bg-gray-700 rounded-lg p-5 shadow hover:shadow-lg transition">
+      <div class="h-40 w-full mb-4 rounded overflow-hidden bg-gray-600">
+        <img src="https://cdn.thewirecutter.com/wp-content/media/2024/11/cheapgaminglaptops-2048px-7981.jpg" alt="Gaming Laptop" class="w-full h-full object-cover">
+      </div>
+      <h3 class="text-xl font-semibold text-white">Gaming Laptop</h3>
+      <p class="text-gray-300 mt-2">$29.99</p>
+      <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Add to Cart</button>
+    </div>
+
+    <div class="bg-gray-700 rounded-lg p-5 shadow hover:shadow-lg transition">
+      <div class="h-40 w-full mb-4 rounded overflow-hidden bg-gray-600">
+        <img src="https://www.lifewire.com/thmb/3GpoaR1VxXFOiY9-m8yT8S0lQX8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/LG-22-28-LG4540-LED-LCD-TV-AMZN-xxx-58ceff565f9b581d726af2ca-b12a1544bfda41418aaaf0afb6aa0375.jpg" alt="LED TV" class="w-full h-full object-cover">
+      </div>
+      <h3 class="text-xl font-semibold text-white">LED TV</h3>
+      <p class="text-gray-300 mt-2">$14.99</p>
+      <button class="mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6 text-center text-gray-400 text-sm mt-12">
+    &copy; 2025 eStore. All rights reserved.
+  </footer>
+</body>
+</html>
