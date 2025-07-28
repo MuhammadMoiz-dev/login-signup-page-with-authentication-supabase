@@ -17,7 +17,7 @@ This project is a simple, responsive eCommerce website frontend that includes **
 
 ## 📸 Preview
 
-![Preview Screenshot]!(project%20UI.png) <!-- You can upload a screenshot and link it here -->
+![UI Preview](project%20UI.png) <!-- You can upload a screenshot and link it here -->
 
 ---
 
